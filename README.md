@@ -91,7 +91,18 @@ Stores uploaded log files temporarily for analysis.
 5. The categorized logs are displayed on the web dashboard.
 
 ---
+## Application Interface
 
+Below is the user interface of the **Automated Log Analyzer Web Application**.
+
+### Log Analyzer Dashboard
+
+!https://github.com/saurabhbutale/Automated-Log-Analyzer/blob/7d9f0926346faf35c2826b007e160864ebae09d0/static/Screenshot%201.png
+
+The dashboard allows users to upload a log file and automatically analyze it to detect:
+- Errors
+- Warnings
+- Informational logs
 ## Log Analysis Logic
 
 The analyzer checks each line of the uploaded log file and classifies entries using simple keyword detection.
