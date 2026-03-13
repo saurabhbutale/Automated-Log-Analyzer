@@ -1,0 +1,109 @@
+body{
+    margin:0;
+    font-family:Arial;
+    background:linear-gradient(135deg,#eef2ff,#dbeafe);
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Main box */
+
+.container{
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    text-align:center;
+    width:420px;
+}
+
+/* Title */
+
+h1{
+    margin-bottom:30px;
+}
+
+/* Form layout */
+
+.upload-form{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+/* File button */
+
+.file-input{
+    padding:10px;
+    width:180px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+/* Analyze button */
+
+.analyze-btn{
+    width:180px;
+    padding:10px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:15px;
+    transition:0.3s;
+}
+
+/* Hover effect */
+
+.analyze-btn:hover{
+    background:#1d4ed8;
+    transform:scale(1.05);
+}
+
+/* Click blink animation */
+
+.analyze-btn:active{
+    animation:blink 0.2s linear;
+}
+
+@keyframes blink{
+    0%{opacity:1;}
+    50%{opacity:0.4;}
+    100%{opacity:1;}
+}
+
+/* Result styles */
+
+ul{
+    text-align:left;
+    background:#f9fafb;
+    padding:15px;
+    border-radius:6px;
+}
+
+.error{
+    color:red;
+}
+
+.warning{
+    color:orange;
+}
+
+.info{
+    color:green;
+}
+
+/* Footer */
+
+footer{
+    position:fixed;
+    bottom:10px;
+    text-align:center;
+    font-size:14px;
+    color:#444;
+}

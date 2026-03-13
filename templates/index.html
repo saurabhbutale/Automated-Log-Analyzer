@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Automated Log Analyzer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Automated Log Analyzer</h1>
+
+    <form method="POST" enctype="multipart/form-data" class="upload-form">
+
+        <input type="file" name="logfile" required class="file-input">
+
+        <button type="submit" class="analyze-btn">
+            Analyze Log
+        </button>
+
+    </form>
+
+    <div class="results">
+
+        <h2>Errors</h2>
+        <ul>
+        {% for e in errors %}
+        <li class="error">{{ e }}</li>
+        {% endfor %}
+        </ul>
+
+        <h2>Warnings</h2>
+        <ul>
+        {% for w in warnings %}
+        <li class="warning">{{ w }}</li>
+        {% endfor %}
+        </ul>
+
+        <h2>Info</h2>
+        <ul>
+        {% for i in info %}
+        <li class="info">{{ i }}</li>
+        {% endfor %}
+        </ul>
+
+    </div>
+
+</div>
+
+<footer>
+    © All Rights Reserved | Copyright Saurabh Kishan Butale 2026
+</footer>
+
+</body>
+</html>
